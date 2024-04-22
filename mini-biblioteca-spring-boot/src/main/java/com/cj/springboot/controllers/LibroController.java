@@ -23,15 +23,13 @@ public class LibroController {
 
     @Autowired
     private LibroService libroService;
-
     @Autowired
     private EditorialService editorialService;
-
     @Autowired
     private CategoriaService categoriaService;
-
     @Autowired
     private AutorService autorService;
+
 
     @GetMapping({"/listar","/"})
     public String listarLibros(Model model){
